@@ -208,3 +208,47 @@ label {
 
 /* ===== STATE STYLES ======= */
 
+/* ===== START OF GLOABL CSS RULES ===== */
+
+.container {
+  max-width: 900px;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 1em;
+  padding: 2em;
+  max-width: 650px;
+}
+
+form input {
+  background: lightgray;
+}
+
+form input:focus {
+  outline: 4px black;
+}
+
+form button {
+  background: lightslategray;
+}
+
+form button:hover {
+  background: darkslategray;
+}
+
+input, textarea, button {
+  grid-column: 2 / 3;
+}
+
+label {
+  grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
