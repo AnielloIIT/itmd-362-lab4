@@ -208,15 +208,20 @@ label {
 
 /* ===== STATE STYLES ======= */
 
+
+
+
 /* ===== START OF GLOABL CSS RULES ===== */
-
-
-
 
 form {
   display: grid;
   max-width: 650px;
   margin: auto;
+}
+
+.content {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input {
@@ -244,19 +249,21 @@ textarea {
   border: none;
 }
 
+/* ===== START OF BIG SCREEN CSS ===== */
 
 @media only screen and (min-width: 600px) {
   form {
     grid-template-columns: 150px 2fr;
     grid-gap: 16px;
+    font-family: 'Open Sans', sans-serif;
   }
 
   label {
     grid-column: 1 / 2;
+    font-size: 20px;
   }
 
   input, button, .block {
-    
     grid-column: 2 / 3;
   }
 
@@ -264,20 +271,21 @@ textarea {
     text-align: center;
     padding: 1em;
     font-size: 38px;
+    font-family: 'Merriweather', serif;
   }
 }
+
+/* ===== START OF MOBILE SCREEN CSS ===== */
 
 @media only screen and (max-width: 600px) {
   form {
     grid-template-columns: 100%;
     grid-gap: 10px;
     overflow: hidden;
-    
+    font-family: 'Open Sans', sans-serif;
   }
   
   label {
-    
-    
     font-size: 20px;
   }
 
@@ -285,12 +293,15 @@ textarea {
     height: 80px;
     border: none;
   }
-  
+
   h1 {
     text-align: center;
     padding: 1em;
     font-size: 30px;
+    font-family: 'Merriweather', serif;
+    overflow: hidden;
   }
+
   button {
     background: lightgray;
     border: none;
@@ -302,10 +313,5 @@ textarea {
   .block input{
     height: auto;
   }
-
-  .content {
-    font-size: 20px;
-  }
-  
 }
   
