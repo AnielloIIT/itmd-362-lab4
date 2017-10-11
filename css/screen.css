@@ -230,7 +230,7 @@ input {
 }
 
 button {
-  background: lightgray;
+  background: #dfdfdf;
   border: none;
   padding: .3em;
 }
@@ -240,13 +240,14 @@ button:hover {
 }
 
 select {
-  background-color: lightgray;
+  background-color: #dfdfdf;
   outline: 0;
 }
 
 textarea {
-  background: lightgray;
+  background: #dfdfdf;
   border: none;
+  height: 200px;
 }
 
 /* ===== START OF BIG SCREEN CSS ===== */
@@ -287,31 +288,50 @@ textarea {
   
   label {
     font-size: 20px;
+    text-align: center;
   }
 
   input {
     height: 80px;
     border: none;
+    font-size: 20px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
   }
 
   h1 {
     text-align: center;
     padding: 1em;
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Merriweather', serif;
     overflow: hidden;
   }
 
   button {
-    background: lightgray;
+    background: #dfdfdf;
     border: none;
     padding: 1em;
-    max-width: 150px;
+    width: 150px;
+    height: 80px;
+    margin: auto;
+    font-size: 20px;
+  }
+
+  textarea {
+    background: #dfdfdf;
+    border: none;
+    height: 200px;
+    width: 400px;
     margin: auto;
   }
 
-  .block input{
-    height: auto;
+  select {
+    background-color :#dfdfdf;
+    outline: 0;
+    height: 80px;
+    width: 400px;
+    margin: auto;
   }
 }
   
